@@ -35,7 +35,7 @@ The current binary targets Apple Silicon. macOS 14.2 or newer is required. The a
 Install Apple’s Command Line Tools, then run:
 
 ```sh
-./scripts/build.sh
+bash scripts/build.sh
 open '.build/Old MacDonalds Desktop Farm.app'
 ```
 
