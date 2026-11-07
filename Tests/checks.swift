@@ -19,7 +19,6 @@ for animal in 0..<3 {
             for phase:CGFloat in [0,0.2,0.5,0.8] {
                 v.phase=phase
                 let data=render(v); check(!data.isEmpty,"render")
-                try! data.write(to:URL(fileURLWithPath:"work/qa/a\(animal)-d\(Int(direction))-s\(state)-p\(phase).png"))
             }
         }
     }
