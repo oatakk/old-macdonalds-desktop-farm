@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/oatakk/old-macdonalds-desktop-farm/releases/tag/v0.4.1"><strong>Download for Apple Silicon</strong></a>
+  <a href="https://github.com/oatakk/old-macdonalds-desktop-farm/releases/tag/v0.4.2"><strong>Download for Apple Silicon</strong></a>
   &nbsp; · &nbsp;
   <a href="#get-started">Getting started</a>
   &nbsp; · &nbsp;
@@ -88,7 +88,7 @@ Each animal has its own saved needs. Closing the app pauses care: there is no of
 
 ### 1. Bring the farm home
 
-**[Download the macOS app →](https://github.com/oatakk/old-macdonalds-desktop-farm/releases/download/v0.4.1/Old-MacDonalds-Desktop-Farm-macOS.zip)**
+**[Download the macOS app →](https://github.com/oatakk/old-macdonalds-desktop-farm/releases/download/v0.4.2/Old-MacDonalds-Desktop-Farm-macOS.zip)**
 
 Unzip the download and move **Old MacDonalds Desktop Farm.app** into **Applications**. Open it and look for the monochrome fox icon in your menu bar.
 
