@@ -32,8 +32,12 @@ jobs:
         run: python3 scripts/test.py
       - name: Build and verify app
         run: bash scripts/build.sh
-      - name: Publish v0.4.1
+      - name: Verify binary deployment target
+        run: |
+          vtool -show-build ".build/Old MacDonalds Desktop Farm.app/Contents/MacOS/Farm" | tee /tmp/farm-build-version.txt
+          grep -Eq 'minos[[:space:]]+14[.]2' /tmp/farm-build-version.txt
+      - name: Publish v0.4.2
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create v0.4.1 .build/Old-MacDonalds-Desktop-Farm-macOS.zip --target "$(git rev-parse HEAD)" --title "v0.4.1 — A fresh little face" --notes "New charcoal and cream pixel-fox app icon and a matching monochrome menu-bar symbol. The menu icon follows macOS light/dark appearance and remains consistent across all three pals. Apple Silicon, macOS 14.2+. Locally signed, not Apple-notarized."
+          gh release create v0.4.2 .build/Old-MacDonalds-Desktop-Farm-macOS.zip --target "$(git rev-parse HEAD)" --title "v0.4.2 — Fresh install compatibility fix" --notes "Corrects the executable deployment target to macOS 14.2. Includes the new charcoal and cream pixel-fox app icon and matching monochrome menu-bar symbol. The menu icon follows macOS light/dark appearance and remains consistent across all three pals. Apple Silicon, macOS 14.2+. Locally signed, not Apple-notarized."
