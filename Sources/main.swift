@@ -444,7 +444,17 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             window.setFrameOrigin(NSPoint(x:p[0],y:p[1])); clampPosition()
         }
         window.orderFrontRegardless()
-        status = NSStatusBar.system.statusItem(withLength:NSStatusItem.variableLength); status.button?.title = ["🦊","🐱","🐰"][fox.animal]
+        status = NSStatusBar.system.statusItem(withLength:NSStatusItem.squareLength)
+        if let button = status.button {
+            let icon = NSImage(contentsOf:Bundle.main.resourceURL!.appendingPathComponent("MenuBarIcon.png"))
+            icon?.size = NSSize(width:16,height:18)
+            icon?.isTemplate = true
+            button.image = icon
+            button.imagePosition = .imageOnly
+            button.title = ""
+            button.toolTip = "Old MacDonald’s Desktop Farm"
+            button.setAccessibilityLabel("Old MacDonald’s Desktop Farm")
+        }
         let menu = NSMenu()
         add(menu,"Old MacDonald’s Desktop Farm · Your desktop companion",nil)
         menu.addItem(.separator())
@@ -580,7 +590,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         saveCare(); fox.animal=max(0,min(2,index)); loadCare()
         preferences.set(fox.animal,forKey:"selectedAnimal")
         fox.affection=0; fox.activity=""; fox.walking=false; fox.needsDisplay=true
-        status?.button?.title=["🦊","🐱","🐰"][fox.animal]; messageUntil=0; refreshCare()
+        messageUntil=0; refreshCare()
     }
     @objc func selectAnimal(_ sender:NSButton) { switchAnimal(sender.tag) }
     @objc func setRoaming(_ sender:NSButton) { roaming=sender.state == .on; fox.walking=false; preferences.set(roaming,forKey:"roaming"); refreshCare() }
