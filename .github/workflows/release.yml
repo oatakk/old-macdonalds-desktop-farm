@@ -5,9 +5,11 @@ permissions:
   contents: write
 jobs:
   release:
-    runs-on: macos-14
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Verify Apple Silicon runner
+        run: test "$(uname -m)" = arm64
       - name: Restore binary artwork in repository
         env:
           GH_TOKEN: ${{ github.token }}
