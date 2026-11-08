@@ -2,6 +2,8 @@
   <img src="https://github.com/user-attachments/assets/cd505ec7-8dd5-41fb-a54c-8734314ef332" alt="Old MacDonald’s Desktop Farm — a little farm, right on your desktop. Maple the fox, Mochi the cat and Clover the bunny." width="100%">
 </p>
 
+<p align="center"><img src="Assets/icon.png" alt="Desktop Farm pixel fox app icon" width="80"></p>
+
 <h1 align="center">Old MacDonald’s Desktop Farm</h1>
 
 <p align="center">
@@ -10,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/oatakk/old-macdonalds-desktop-farm/releases/tag/v0.4.0"><strong>Download for Apple Silicon</strong></a>
+  <a href="https://github.com/oatakk/old-macdonalds-desktop-farm/releases/tag/v0.4.1"><strong>Download for Apple Silicon</strong></a>
   &nbsp; · &nbsp;
   <a href="#get-started">Getting started</a>
   &nbsp; · &nbsp;
@@ -86,9 +88,9 @@ Each animal has its own saved needs. Closing the app pauses care: there is no of
 
 ### 1. Bring the farm home
 
-**[Download the macOS app →](https://github.com/oatakk/old-macdonalds-desktop-farm/releases/download/v0.4.0/Old-MacDonalds-Desktop-Farm-macOS.zip)**
+**[Download the macOS app →](https://github.com/oatakk/old-macdonalds-desktop-farm/releases/download/v0.4.1/Old-MacDonalds-Desktop-Farm-macOS.zip)**
 
-Unzip the download and move **Old MacDonalds Desktop Farm.app** into **Applications**. Open it and look for the animal icon in your menu bar.
+Unzip the download and move **Old MacDonalds Desktop Farm.app** into **Applications**. Open it and look for the monochrome fox icon in your menu bar.
 
 | Requirement | Current release |
 | :--- | :--- |
@@ -116,7 +118,7 @@ Leave **Virtual pet mode** off for a carefree companion. Turn it on for snacks, 
 | **Drag the pal** | Move it around your desktop. |
 | **Double-click** | Open the control panel. |
 | **Right-click** | Open its menu. |
-| **Menu-bar animal icon** | Change pal, open controls, sleep, hide or quit. |
+| **Menu-bar fox icon** | Change pal, open controls, sleep, hide or quit. |
 | **Bring here** | Bring the pal back to the main display. |
 | **Hover** | No reaction; the pal carries on. |
 
