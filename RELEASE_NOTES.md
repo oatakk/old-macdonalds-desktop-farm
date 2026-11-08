@@ -1,3 +1,9 @@
+# v0.4.2 — Fresh install compatibility fix
+
+- Explicitly targets macOS 14.2 in the compiled executable, matching the documented requirement.
+- Verifies the Mach-O deployment target before publishing.
+- Includes the v0.4.1 icon refresh.
+
 # v0.4.1 — A fresh little face
 
 - New charcoal and cream pixel-fox app icon, supplied by the project owner.
