@@ -1,69 +1,187 @@
-# Old MacDonald’s Desktop Farm 🦊🐱🐰
+<p align="center">
+  <img src="Assets/media/hero.png" alt="Old MacDonald’s Desktop Farm — a little farm, right on your desktop. Maple the fox, Mochi the cat and Clover the bunny." width="100%">
+</p>
 
-A tiny pixel farm for your Mac. No chores required.
+<h1 align="center">Old MacDonald’s Desktop Farm</h1>
 
-![Walking and sleeping pixel pals](Assets/demo.gif)
+<p align="center">
+  A cozy little corner of your Mac.<br>
+  Three pixel pals that walk, nap, type along and keep you company.
+</p>
 
-Maple the fox, Mochi the cat, and Clover the bunny hang out on your desktop, walk around, curl up for a nap, tap a tiny keyboard while you type, and wear headphones when audio is playing.
+<p align="center">
+  <a href="https://github.com/oatakk/old-macdonalds-desktop-farm/releases/tag/v0.4.0"><strong>Download for Apple Silicon</strong></a>
+  &nbsp; · &nbsp;
+  <a href="#get-started">Getting started</a>
+  &nbsp; · &nbsp;
+  <a href="#build-it-yourself">Build from source</a>
+  &nbsp; · &nbsp;
+  <a href="https://github.com/oatakk/old-macdonalds-desktop-farm/issues">Feedback & ideas</a>
+</p>
 
-## Two ways to keep company
+<p align="center">
+  <a href="https://github.com/oatakk/old-macdonalds-desktop-farm/actions/workflows/build.yml"><img src="https://github.com/oatakk/old-macdonalds-desktop-farm/actions/workflows/build.yml/badge.svg" alt="macOS build and tests"></a>
+  <img src="https://img.shields.io/badge/macOS-14.2%2B-405344?style=flat-square" alt="macOS 14.2 or newer">
+  <img src="https://img.shields.io/badge/native-Swift%20%2B%20AppKit-775C8D?style=flat-square" alt="Native Swift and AppKit">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-C37945?style=flat-square" alt="MIT license"></a>
+</p>
 
-**Companion mode:** let your pal wander, nap, and keep you company. No feeding or care required.
+---
 
-**Virtual pet mode:** an optional little throwback to pocket pets. Feed, cuddle, play, and rest to replenish Food, Joy, and Rest. Each animal has its own saved needs. Needs pause when you close the app.
+## Meet your new desk mates
 
-## Little details
+An orange fox, a lavender cat and a little ivory bunny. Choose a favorite from the menu bar or control panel, then give them a little space on your desktop.
 
-- Three pixel pals with six-frame walking/hopping cycles.
-- Curled-up sleeping poses and blinking eyes.
-- A tiny keyboard and animated headphones.
-- Food bowls, a bouncing paw-ball, and heart reactions.
-- Click to pet, drag to move, double-click to open the control panel.
-- Hovering does not change the pal’s behavior.
-- Small, Medium, and Large sizes; saved position and preferences.
-- Transparent pixels let clicks pass through to the app underneath.
-- Menu-bar controls. No Dock icon, accounts, ads, or network requests.
+![Meet Maple the fox, Mochi the cat, and Clover the bunny](Assets/media/meet-the-pals.png)
 
-## Run
+| Pal | Look | A little detail |
+| :--- | :--- | :--- |
+| **Maple · Fox** | Orange fur, cream cheeks and a big cream-tipped tail | Curls up behind that fluffy tail for a nap. |
+| **Mochi · Cat** | Soft lavender, cream muzzle and a curled tail | Occasionally brings a paw up to wash a cheek. |
+| **Clover · Bunny** | Ivory fur, pink ears and a tiny round tail | Hops around and settles down with folded ears. |
 
-Download the macOS ZIP from **Releases**, unzip it, and move the app into Applications. Open it and look for its animal icon in the menu bar. Quit from the control panel or menu bar.
+## A little life on your desktop
 
-The current binary targets Apple Silicon. macOS 14.2 or newer is required. The app is locally signed, not Apple-notarized; macOS may require approval in Privacy & Security before allowing it to open.
+A tiny stroll between tasks. A keyboard when you type. Headphones when audio is playing. A curled-up nap when you pause.
 
-## Build from source
+![Animated app-rendered demonstration: resting, walking, typing, listening, sleeping, eating and playing](Assets/media/a-day-on-the-farm.gif)
 
-Install Apple’s Command Line Tools, then run:
+The pals stay above your windows and live in the menu bar, with no Dock icon. Drag yours somewhere comfortable. Transparent space around the character lets clicks pass through to the app underneath.
+
+![Six moments with all three pals: walking, typing, headphones, sleeping, eating and playing](Assets/media/little-moments.png)
+
+> The character gallery and GIF are rendered by the app’s own drawing code. The control-panel images below are captures of the running macOS app.
+
+## Your companion, your pace
+
+Care is a choice. You can keep a pal on screen without managing needs, or switch on a little pocket-pet nostalgia.
+
+<table>
+  <tr>
+    <th width="50%">Companion mode</th>
+    <th width="50%">Virtual pet mode</th>
+  </tr>
+  <tr>
+    <td valign="top">
+      <p>Just good company. Your pal wanders, naps and reacts to typing and audio. No feeding routine required.</p>
+      <img src="https://github.com/user-attachments/assets/f3908512-c3ba-43b3-bf4e-359cbed0ac0d" alt="Actual macOS control panel with Companion mode enabled and care actions disabled" width="100%">
+    </td>
+    <td valign="top">
+      <p>Food, Joy and Rest in a retro green panel. Feed, cuddle, play or let your pal sleep — whenever you feel like it.</p>
+      <img src="https://github.com/user-attachments/assets/17d68a15-b284-45fc-854c-7c3f2cdfc6fc" alt="Actual macOS control panel showing Food, Joy and Rest meters with care actions enabled" width="100%">
+    </td>
+  </tr>
+</table>
+
+Each animal has its own saved needs. Closing the app pauses care: there is no offline decay, illness or death mechanic.
+
+| Action | What happens |
+| :--- | :--- |
+| **Feed** | A little bowl appears, food recedes, and Food increases. |
+| **Cuddle** | A heart reaction and a boost to Joy. |
+| **Play** | A bouncing paw-ball; Joy increases while Food and Rest decrease a little. |
+| **Sleep / Wake** | A curled resting pose; sleeping restores Rest. |
+
+## Get started
+
+### 1. Bring the farm home
+
+**[Download the macOS app →](https://github.com/oatakk/old-macdonalds-desktop-farm/releases/download/v0.4.0/Old-MacDonalds-Desktop-Farm-macOS.zip)**
+
+Unzip the download and move **Old MacDonalds Desktop Farm.app** into **Applications**. Open it and look for the animal icon in your menu bar.
+
+| Requirement | Current release |
+| :--- | :--- |
+| macOS | **14.2 or newer** |
+| Download architecture | **Apple Silicon** |
+| Account or subscription | None |
+| Runtime dependencies | None |
+| App language | English |
+
+The download is locally signed, **not Apple-notarized**. macOS may require approval in **System Settings → Privacy & Security** before opening it. The native source build targets the architecture of the Mac used to compile it; Intel builds have not been validated.
+
+### 2. Pick a pal
+
+Choose **Maple**, **Mochi** or **Clover** in the control panel. Select **Small**, **Medium** or **Large** and drag your pal into place. Position, size and the selected animal are saved.
+
+### 3. Make yourself comfortable
+
+Leave **Virtual pet mode** off for a carefree companion. Turn it on for snacks, cuddles and the retro needs panel. Disable **Let my pal wander** if you prefer a pal that stays put.
+
+## The little controls
+
+| Gesture or control | Result |
+| :--- | :--- |
+| **Click the pal** | A head scratch and a heart; adds a little Joy in care mode. |
+| **Drag the pal** | Move it around your desktop. |
+| **Double-click** | Open the control panel. |
+| **Right-click** | Open its menu. |
+| **Menu-bar animal icon** | Change pal, open controls, sleep, hide or quit. |
+| **Bring here** | Bring the pal back to the main display. |
+| **Hover** | No reaction; the pal carries on. |
+
+Manual sleep takes priority over typing and audio. Clicking or dragging a sleeping pal wakes it.
+
+## Private by design
+
+No account. No ads. No telemetry. No network requests from the app.
+
+The app reads only what its reactions need:
+
+| Signal | Purpose | What it does not capture |
+| :--- | :--- | :--- |
+| Cursor position | Dragging, positioning and transparent click-through | Screenshots or browsing activity |
+| Aggregate keyboard idle time | Show the typing animation | Keys, typed text or documents |
+| Core Audio output-stream activity | Put headphones on while audio is active | Audio samples, track titles or microphone recordings |
+
+Preferences and per-pet needs stay locally on your Mac. Image generation is used during artwork creation only; running the app requires no AI service or API key.
+
+## Build it yourself
+
+Requires Apple’s Command Line Tools and Python 3 for the build helper.
 
 ```sh
+git clone https://github.com/oatakk/old-macdonalds-desktop-farm.git
+cd old-macdonalds-desktop-farm
 bash scripts/build.sh
-open '.build/Old MacDonalds Desktop Farm.app'
 ```
 
-The build uses your Mac’s native architecture and has no third-party runtime dependencies.
+The locally signed, distributable ZIP is written to:
 
-## Tests
+```text
+.build/Old-MacDonalds-Desktop-Farm-macOS.zip
+```
+
+There are no third-party Swift packages or JavaScript runtimes to install.
+
+### Run the checks
 
 ```sh
 python3 scripts/test.py
 ```
 
-Tests compile the current production implementation with isolated preference suites. They cover pose rendering, animation changes, care actions, saved needs, sleep priorities, sizing, and alpha hit-testing. Passing checks do not establish subjective animation quality or compatibility with every media player.
+The tests compile the current production code and use isolated preferences. They cover rendering, changing animation frames, care actions, independent saved needs, sleep priorities, scaling and alpha hit-testing. The latest local regression run passed **251 checks**. GitHub Actions builds and tests the project on macOS.
 
-## Privacy
+Passing checks do not measure whether an animation looks natural, or establish compatibility with every media player.
 
-Everything stays on your Mac. The app reads cursor position, aggregate keyboard idle time, and whether Core Audio output streams are active. It does not capture typed text, record audio, inspect media titles, or send data anywhere. No microphone or screen-recording capture is used.
+## A few honest limitations
 
-## Current limitations
+- **Audio detection follows active streams.** Silent video is not detected; a paused player that keeps its stream open can leave the headphones visible.
+- **The headphone lights are decorative.** They are not actual beat detection.
+- **Play happens in place.** The ball animation is not world-space fetch.
+- **Some pose transitions are immediate.** Walking art has slightly richer shading than the native idle sprites.
+- **More real-world testing is welcome.** Multi-monitor layouts, prolonged battery usage, Intel builds and more media players need coverage.
 
-- Silent video is not detected. An app keeping an audio stream open may leave headphones visible while paused.
-- Headphone lights and music notes are decorative, not beat detection.
-- Play is an in-place ball animation, not world-space fetch.
-- Idle/walking pose transitions are immediate.
-- Multi-monitor behavior, long-running battery usage, and broad player compatibility need more testing.
-- Walking art has slightly richer shading than the native idle sprites.
+## Help the farm grow
 
-## Artwork and license
+Found an odd pose or an interaction that feels off? [Open an issue](https://github.com/oatakk/old-macdonalds-desktop-farm/issues) with the pal, action, macOS version and a screenshot or short recording. For audio issues, include the player and output device.
 
-Native pixel poses and UI are drawn in Swift/AppKit. Walking sprites were generated with OpenAI ImageGen using the original characters as a reference, then sliced into aligned, transparent frames. See [ARTWORK.md](ARTWORK.md).
+Small, focused contributions are especially useful: clearer animation transitions, accessibility, multi-monitor fixes and reproducible bug reports. Please keep care optional and preserve the offline experience.
 
-MIT licensed. Contributions and thoughtful animation improvements are welcome.
+## Artwork & license
+
+Native poses, accessories and UI are drawn with Swift/AppKit. The dedicated walking sprites were created with OpenAI ImageGen using the original characters as reference, then prepared as aligned transparent frames. See [ARTWORK.md](ARTWORK.md) for provenance.
+
+This project is available under the [MIT License](LICENSE).
+
+<p align="center"><strong>A little farm. A quieter workday.</strong></p>
