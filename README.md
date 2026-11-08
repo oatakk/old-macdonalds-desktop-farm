@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Assets/media/hero.png" alt="Old MacDonald’s Desktop Farm — a little farm, right on your desktop. Maple the fox, Mochi the cat and Clover the bunny." width="100%">
+  <img src="https://github.com/user-attachments/assets/cd505ec7-8dd5-41fb-a54c-8734314ef332" alt="Old MacDonald’s Desktop Farm — a little farm, right on your desktop. Maple the fox, Mochi the cat and Clover the bunny." width="100%">
 </p>
 
 <h1 align="center">Old MacDonald’s Desktop Farm</h1>
