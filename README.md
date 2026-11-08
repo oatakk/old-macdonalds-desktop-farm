@@ -100,7 +100,22 @@ Unzip the download and move **Old MacDonalds Desktop Farm.app** into **Applicati
 | Runtime dependencies | None |
 | App language | English |
 
-The download is locally signed, **not Apple-notarized**. macOS may require approval in **System Settings → Privacy & Security** before opening it. The native source build targets the architecture of the Mac used to compile it; Intel builds have not been validated.
+### First launch: macOS verification warning
+
+The current download is locally signed, **not signed with an Apple Developer ID or notarized by Apple**. macOS may show **“Apple could not verify…”** and block the first launch.
+
+If you trust the download from this repository, you can approve this app individually:
+
+1. In the warning dialog, click **Done**.
+2. Open **System Settings → Privacy & Security**.
+3. Scroll to **Security**, find **Old MacDonalds Desktop Farm**, and click **Open Anyway**. This option appears after you try to open the app.
+4. Authenticate if prompted, then click **Open** in the confirmation dialog.
+
+You only need to approve this app; leave your Mac’s general security settings enabled. See [Apple’s guide to opening apps safely](https://support.apple.com/en-us/102445).
+
+The app runs from the **fox icon in the menu bar** and does not appear in the Dock automatically. Move the `.app` into **Applications** so you can find and launch it there.
+
+The native source build targets the architecture of the Mac used to compile it; Intel builds have not been validated.
 
 ### 2. Pick a pal
 
